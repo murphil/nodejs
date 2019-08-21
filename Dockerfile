@@ -1,6 +1,6 @@
 FROM nnurphy/deb
 
-ENV NODE_VERSION=12.8.1
+ENV NODE_VERSION=12.9.0
 RUN set -ex \
   ; apt-get update \
   ; curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - \
