@@ -1,6 +1,6 @@
 FROM nnurphy/deb
 
-ENV NODE_HOME=/opt/node NODE_VERSION=12.11.0
+ENV NODE_HOME=/opt/node NODE_VERSION=12.11.1
 ENV PATH=${NODE_HOME}/bin:$PATH
 RUN set -ex \
   ; mkdir -p ${NODE_HOME} \
