@@ -1,4 +1,4 @@
-FROM nnurphy/deb
+FROM nnurphy/ub
 
 ENV NODE_HOME=/opt/node NODE_VERSION=12.16.2
 ENV PATH=${NODE_HOME}/bin:$PATH
