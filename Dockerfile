@@ -1,6 +1,6 @@
 FROM nnurphy/ub
 
-ENV NODE_VERSION=12.18.2
+ENV NODE_VERSION=12.18.3
 ENV NODE_HOME=/opt/node
 ENV PATH=${NODE_HOME}/bin:$PATH
 RUN set -ex \
