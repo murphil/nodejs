@@ -1,13 +1,8 @@
 FROM nnurphy/ub
 
-ENV NODE_VERSION=14.15.1
-ENV NODE_HOME=/opt/node
-ENV PATH=${NODE_HOME}/bin:$PATH
 RUN set -ex \
-  ; mkdir -p ${NODE_HOME} \
-  ; wget -q -O- https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz \
-    | tar xJ -C ${NODE_HOME} --strip-components 1 \
-  ; chown -R root:root ${NODE_HOME} \
+  ; curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+  ; apt-get install -y nodejs \
   ; npm -g install node-gyp \
   ; npm cache clean -f \
   ; npm config set registry https://registry.npm.taobao.org \
